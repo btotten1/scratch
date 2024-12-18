@@ -1,0 +1,372 @@
+@charset "UTF-8";
+:root {
+  --bs-pink-light: #f8c9d1; /* Soft pink background */
+  --bs-pink: #f1a7c6; /* Girly soft pink */
+  --bs-pink-dark: #d6729a; /* Darker pink for accents */
+  --bs-white: #fff; /* White for clean contrast */
+  --bs-gray-light: #e1e1e1; /* Lighter gray for soft background */
+  --bs-gray-dark: #5c5c5c; /* Darker gray for text */
+  --bs-primary: #ff6f91; /* Vibrant pink primary color */
+  --bs-link-color: #ff5e92; /* Lighter pink for links */
+  --bs-link-hover-color: #ff4785; /* Darker pink on hover */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif; /* Clean font for body */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--bs-gray-dark);
+  background-color: var(--bs-pink-light);
+  text-align: center;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--bs-pink-dark);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive; /* Playful header font */
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif; /* Cute sans-serif font */
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: 'Lobster', cursive; /* Whimsical sub-header font */
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+p {
+  color: var(--bs-gray-dark);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+li {
+  font-size: 1.1rem;
+  color: var(--bs-gray-dark);
+  margin-bottom: 10px;
+}
+
+/* === Unordered List Embedded in Ordered List === */
+ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+ol ul {
+  list-style-type: square;
+  padding-left: 2rem;
+  margin-top: 10px;
+}
+
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+.resume-header {
+  text-align: center;
+  background-color: var(--bs-primary);
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header .profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.resume-header .profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.resume-header .name {
+  font-size: 3.5rem;
+  color: var(--bs-white);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.resume-header .tagline {
+  font-size: 1.5rem;
+  color: var(--bs-white);
+  font-style: italic;
+}
+
+.contact-info, .professional-experience, .skills, .education {
+  background-color: var(--bs-white);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .professional-experience h2, .skills h2, .education h2 {
+  color: var(--bs-pink-dark);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.job, .volunteer-work ul {
+  background-color: var(--bs-gray-light);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+  color: var(--bs-primary);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills li {
+  background-color: var(--bs-pink);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  color: var(--bs-white);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  font-size: 1rem;
+  color: var(--bs-gray-dark);
+  margin-top: 40px;
+}
+
+footer .footer-text {
+  font-style: italic;
+  color: var(--bs-pink-dark);
+}
+
+button {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--bs-link-hover-color);
+}
+/* =============== Skiing Section =============== */
+/* Skiing Section */
+.skiing {
+    background-color: var(--bs-white);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+  }
+  
+  .skiing h2 {
+    color: var(--bs-pink-dark);
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .skiing ol {
+    list-style-type: decimal;
+    padding-left: 2rem;
+    color: var(--bs-gray-dark);
+    text-align: center; /* Center text inside list items */
+  }
+  
+  .skiing ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-top: 10px;
+    color: var(--bs-gray-dark);
+  }
+  
+  .skiing li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+/* Back to Home Button */
+.back-to-home {
+    background-color: var(--bs-pink-dark); /* Darker pink background */
+    color: var(--bs-white); /* White text */
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
+    position: absolute; /* Position it absolutely */
+    top: 20px; /* Space from the top of the screen */
+    left: 0; /* Align it to the left */
+    right: 50; /* Allow it to stretch to the right */
+    margin: 0 auto; /* Center horizontally */
+    width: 200px; /* Set a fixed width */
+    text-align: center;
+  }
+  
+  .back-to-home:hover {
+    background-color: var(--bs-link-hover-color); /* Darker pink on hover */
+  }
+  /* Center the chart container */
+.chart-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin: 0 auto; /* Optional: to ensure it’s centered */
+    padding: 20px; /* Add some space around the chart */
+    width: 100%; /* Make sure it takes the full width */
+  }
+  
+  /* Optional: set a max-width for the chart */
+  .tableauPlaceholder {
+    max-width: 100%; /* Allow it to resize to fit screen */
+    width: 900px; /* Set a width for the chart */
+    height: 750px; /* Set a height for the chart */
+    margin: 0 auto; /* Center the chart horizontally */
+  }
+  
+  .tableauViz {
+    display: block; /* Ensure the iframe displays as a block-level element */
+  }
+  
+  /* Snake Game Container */
+.snake-game {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Canvas Style */
+#snakeCanvas {
+    border: 2px solid #ff6f91; /* Add a fun border color */
+    background-color: #f3e5f5; /* Soft pink background */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Play Again Button */
+#playAgainButton {
+    display: none; /* Hidden by default, shown when game ends */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#playAgainButton:hover {
+    background-color: #f436bb; /* Change color on hover */
+}
+
+/* Snake */
+.snake {
+    fill: #42b6c6; /* Snake color (light green) */
+}
+
+/* Food - cute fruit image */
+.food {
+    border-radius: 50%;
+    background-color: rgb(205, 100, 100); /* Initially set as red, you can change it */
+}
+
+/* Score text */
+.score {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 20px;
+    color: #ff4081; /* Cute pink color for score */
+}
+
+  /* Snake Game Section (wrapper) */
+.snake-game {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;  /* Stack the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center;     /* Center the content horizontally */
+}
+
+/* Play Again Button */
+#playAgainButton {
+    display: none; /* Hidden by default, shown when game ends */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#playAgainButton:hover {
+    background-color: #f44336; /* Change color on hover */
+}
+
